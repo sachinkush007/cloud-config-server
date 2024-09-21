@@ -5,3 +5,11 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
+    
+microservices:
+  payment-service:
+    endpoints:
+      uri: http://PAYMENT-SERVICE/payment/doPayment
+  order-service:
+    endpoints:
+      uri: http://ORDER-SERVICE/order/bookOrder
